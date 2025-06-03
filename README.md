@@ -54,4 +54,4 @@ When you are too lazy to build infrastructure manually.
 
 Use at your own discretion. I, the author, assumes **no responsibility or liability** for any consequences resulting from the use of this software.
 
-I strongly suggest using it in private servers only to mess with your friends, the script was used in private servers only during it's short development.
+I strongly suggest using it in private servers only to mess with your friends, the script was not used in public servers during its short development.
