@@ -121,6 +121,13 @@ FastBuildShip(x, y) {
                     }
 
                     ; if you wanna add more shit
+
+                    else {
+                        ToolTip(code . " is not a valid command.")
+                        Sleep(1200)
+                        ToolTip()
+                    }
+                    
                 }
             }
 
@@ -154,19 +161,32 @@ FastBuildShip(x, y) {
                         Sleep(50)
                         FastBuildShip(orig_x, orig_y)
                     }
-
+                    
                     ; if you wanna add more shit
+
+                    else {
+                        ToolTip(code . " is not a valid command.")
+                        Sleep(1200)
+                        ToolTip()
+                    }
+
                 }
             }
 
         }
 
 
-        else {
+        else If IsInteger(n_initial) {
             while (clicks < n_initial) {
-            FastNuke(orig_x, orig_y)
-            clicks += 1
+                FastNuke(orig_x, orig_y)
+                clicks += 1
             }
+        }
+
+        else {
+            ToolTip(n_initial . " is not a valid command.")
+            Sleep(1200)
+            ToolTip()
         }
 
         }
